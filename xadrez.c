@@ -5,28 +5,44 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    int torre = 0;
+    int bispo = 1;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    printf("Agora vai começar o Desafio Xadrez feito pelo Aluno Luis F Rizzuto F!\n"
+    "4 peças irão se mover, preparado para começar? Lá vamos nôs!!\n"
+    "Começando pela torre que irá mover 5 casas..");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    //printf("");
+    //Aqui vamos fazer um Do-While para a torre, 5 casas para a direita
+    do{
+        printf("Direita %d\n", torre);
+        torre++;
+    } while(torre <= 5);
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    //Aqui vamos fazer um While para o Bispo, 5 casas em diagonal direita e cima
+    printf("----------------------\n");
+    printf("Agora a movimentação do Bispo, também 5 casas\n");
+        
+    while(bispo != 6){
+        printf("Direita e Cima %d\n", bispo);
+        bispo++;
+    }
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    //Aqui vamos fazer um For para a Rainha, 8 casas para a esquerda
+    printf("----------------------\n");
+    printf("Agora a movimentação da Rainha, 8 casas\n");
+    
+    for(queen = 0; queen == 8; queen++){
+        printf("Esquerda %d \n", queen);
+    };
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //Aqui vamos fazer um para o Cavalo
+ /*   printf("----------------------\n");
+    printf("Agora a movimentação do Cavalo, 3 casas\n");
+
+*/
+    
 
     return 0;
 }
