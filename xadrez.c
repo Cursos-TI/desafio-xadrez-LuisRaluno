@@ -8,10 +8,12 @@ int main() {
 
     int torre = 0;
     int bispo = 1;
+    int cavalo = 1;
+    int L = 1;
 
-    printf("Agora vai começar o Desafio Xadrez feito pelo Aluno Luis F Rizzuto F!\n"
+    printf("Agora vai começar o Desafio Xadrez feito pelo Aluno Luis Rizzuto !\n"
     "4 peças irão se mover, preparado para começar? Lá vamos nôs!!\n"
-    "Começando pela torre que irá mover 5 casas..");
+    "Começando pela torre que irá mover 5 casas..\n");
 
     //printf("");
     //Aqui vamos fazer um Do-While para a torre, 5 casas para a direita
@@ -25,7 +27,7 @@ int main() {
     printf("Agora a movimentação do Bispo, também 5 casas\n");
         
     while(bispo != 6){
-        printf("Direita e Cima %d\n", bispo);
+        printf("Direita, Cima %d\n", bispo);
         bispo++;
     }
 
@@ -33,16 +35,26 @@ int main() {
     printf("----------------------\n");
     printf("Agora a movimentação da Rainha, 8 casas\n");
     
-    for(queen = 0; queen == 8; queen++){
+    for(int queen = 1; queen <= 8; queen++){
         printf("Esquerda %d \n", queen);
     };
 
-    //Aqui vamos fazer um para o Cavalo
- /*   printf("----------------------\n");
+    //Aqui vamos fazer um para o Cavalo, 3 casas (2 pra baixo e 1 para esquerda, em forma de L)
+    printf("----------------------\n");
     printf("Agora a movimentação do Cavalo, 3 casas\n");
 
-*/
+    do{
+        while(cavalo < 3){
+            printf("Baixo %d \n", cavalo);
+            cavalo++;
+        }
+        
+        L++;
+        printf("Esquerda %d\n", L);
+
+    }while(L <= 2);
     
+    printf("Acabou!");
 
     return 0;
 }
